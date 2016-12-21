@@ -1,0 +1,634 @@
+.portfolio-thumbnail{
+	border-style:solid;
+	border-width:1.6px;
+	border-color:black;
+	background-color:black;
+	display:inline-block;
+	margin-bottom:5px;
+	margin-right: 5px;
+	margin-top:5px;
+	margin-left:5px
+	/*sdfsdfdsdfsdf*/
+}
+
+.list {
+    list-style-type: circle;
+}
+
+.text-center{
+
+}
+
+
+.portfolio-content{
+	border-color:black;
+	border-width:5px;
+}
+
+.portfolio-thumbnail-img{
+	display:inline-block;
+
+}
+
+.portfolio-thumbnail-img2{
+	
+
+}
+
+.navbar-header{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	opacity:.9;
+}
+
+.sub-container{
+	font-family: verdana;
+	background-image: url("img/neighborhood3.gif");
+
+	
+}
+
+.navbar-inverse{
+	
+
+}
+
+
+
+.row{
+	position:center;
+
+	
+}
+
+.jumbotron {
+	
+	background-image: url("../assets/cartArt4.png");
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:5px;
+	opacity:.9;
+	text-shadow: 
+	
+}
+
+
+.container {
+	
+	
+}
+#syria_title {
+    opacity: 0;
+    color:blue;
+    visibility:visible;
+    background-color: black;
+    display: inline-block;
+
+}
+
+
+
+#syria_title img:hover {
+    opacity: 1;
+    color:blue;
+    visibility:visible;
+    background-color: black;
+    display: inline-block;
+    visibility:visible;
+}
+
+
+
+
+
+.brightness2 {
+    background-color: black;
+    display: inline-block;
+
+}
+
+
+
+
+.carousel-caption {
+    color:white;
+    text-align:center;
+    display:inline-block;
+    position:absolute;
+	margin-bottom:40px;
+	opacity:1;
+
+
+}
+
+
+
+
+
+.portfolio-full{
+	width:60%;
+	float:right;
+	right: 200px;
+	
+}
+
+.thumbnail {
+	max-width: 360px;
+	max-height: 360px;
+}
+
+.image-overlay {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-95px;
+	vertical-align:center;
+	padding-top:130px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.portfolio-thumbnail:hover .image-overlay {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-2 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-67px;
+	vertical-align:center;
+	padding-top:130px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.portfolio-thumbnail:hover .image-overlay-2 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-3 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-70px;
+	vertical-align:center;
+	padding-top:160px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.portfolio-thumbnail:hover .image-overlay-3 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-4 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-95px;
+	vertical-align:center;
+	padding-top:130px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.portfolio-thumbnail:hover .image-overlay-4 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-5 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-110px;
+	vertical-align:center;
+	padding-top:160px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.portfolio-thumbnail:hover .image-overlay-5 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-6 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-95px;
+	vertical-align:center;
+	padding-top:130px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.portfolio-thumbnail:hover .image-overlay-6 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-7 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-92px;
+	vertical-align:center;
+	padding-top:160px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.portfolio-thumbnail:hover .image-overlay-7 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-8 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-95px;
+	vertical-align:center;
+	padding-top:130px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.portfolio-thumbnail:hover .image-overlay-8 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-9 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-125px;
+	vertical-align:center;
+	padding-top:130px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.portfolio-thumbnail:hover .image-overlay-9 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-10 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-93px;
+	vertical-align:center;
+	padding-top:190px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.portfolio-thumbnail:hover .image-overlay-10 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-13 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-72px;
+	vertical-align:center;
+	padding-top:130px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.portfolio-thumbnail:hover .image-overlay-13 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-14 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-110px;
+	vertical-align:center;
+	padding-top:160px;
+	background: none;
+	color: #000;
+	font-size:25px;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.portfolio-thumbnail:hover .image-overlay-14 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+
+
+/*
+.image-overlay2 {
+	position: absolute;
+	display:inline-grid;
+	top: 0px;
+	bottom: 0;
+	right:15px;
+	text-align:center;
+	background: blue;
+	background-size: 50% auto;
+	width:200px;
+	color: white
+	font-weight: bold;
+	
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+
+
+.portfolio-thumbnail:hover .image-overlay2 {
+	visibility: visible;
+	text-align:right;
+	bottom:10px;
+	top:-5px;
+	opacity: 1;
+}
+*/
+.portfolio-thumbnail{
+	
+	
+}
+
+.row, .portfolio-content{
+	margin-bottom: .1%;
+	text-align: center;
+}
+
+.portfolio-content{
+	padding: 10px;
+
+}	
+.caption-style-1 .caption{
+	cursor: pointer;
+	margin-bottom:140px;
+	position:absolute;
+	opacity:0;
+	transition: ease-in-out;
+}
+
+.text {
+	display:inline-block;
+	font-size:12px;
+	position:relative;
+	opacity:.8;
+	max-width:400px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+}
+
+@font-face{
+	font-family:"";
+	src:url("fonts/OPTIMA.TTF");
+}
+
+
+.page-header{
+	text-align:left;
+	text-indent:0px;
+	right:5px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+.row-header{
+	text-align:left;
+	padding-left:30px;
+	width:90%;
+	right:5px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.Englewood-Past-and-Present{
+	height:10px;
+	background-color:blue;
+
+}
+
+.portfolio-thumbnail-project{
+	background-color: white;
+	border-width: 10px;
+	border-style: solid;
+	border-color: black;
+	position:absolute;
+	float:right;
+	border:none;
+	box-shadow:none;
+	padding-left:10px;
+	margin-bottom:10px;
+	width:200%;
+
+
+
+}
+
+.portfolio-thumbnail-Englewood-img{
+	width:700px;
+
+
+}
+
+
+.description{
+	text-align:left;
+	padding-left:30px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+.jumbotron-container{
+	padding-top:4800px;
+	
+}
+
+.heading{
+
+	left:15px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
+}
+
+.wooden-ships-heading{
+	text-align:left;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.portfolio-thumbnail-woodenships{
+	box-shadow:none;
+	
+	
+	
+}
+
+.portfolio-thumbnail-woodenships-img{
+	box-shadow:none;
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("fonts/delicious_[123].sit") format('sit'),
+   
+}
+
+#subheading{
+	font-size:20px;
+	margin-top:4px;
+	margin-bottom:0px;
+}

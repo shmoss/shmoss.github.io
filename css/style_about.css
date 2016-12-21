@@ -1,0 +1,118 @@
+.portfolio-thumbnail-crimeByTime{
+	border: 0 none;
+    box-shadow: none;
+   	padding-left:20px;
+    float:left;
+
+    
+
+}
+
+.portfolio-thumbnail-crimeByTime-img{
+	border-style:solid;
+	border-color:black;
+	border-width:1.5px;
+	border-radius:0;
+    
+    
+
+}
+
+.portfolio-thumbnail-crimeByTime-img{
+
+	
+}
+
+.navbar-header{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+.navbar-nav{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+
+.logo{
+	background-color: white;
+	border-width: 10px;
+	border-style: solid;
+	border-color: white;
+}
+
+
+.main{
+	background-color: white;
+	border-width: 0px;
+	border-style: solid;
+	border-color: black;
+}
+.jumbotron{
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-toggle{
+	background-color: white;
+}
+
+.title{
+	padding-top: 70px;
+}
+.header{
+	padding-top: 10px;
+
+
+}
+
+.heading{
+	margin-left:33px;
+}
+
+.text {
+	display:inline-block;
+	padding-top:10px;
+	text-align:center
+	font-size:12px;
+	position:absolute;
+	opacity:.8;
+	max-width:400px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 14px;
+
+
+}
+
+.description{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-left:20px;
+
+
+}
+
+.page-header{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+.row-header{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+
+.jumbotron-footer{
+	opacity:0;
+}
+
+#subheading{
+	font-size:20px;
+	margin-top:4px;
+	margin-bottom:0px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta charset=utf-8>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="css/style_terrain.css" />
+		<script type="text/javascript" src = "js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src = "js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!-- navbar start here -->
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle"
+						data-toggle="collapse" data-target="#myNav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="glyphicon glyphicon-menu-hamburger" style="color:gray"></span>
+						<span class="menu" style="color:gray">Menu</span>
+					</button>	
+					<a class="navbar-brand" href="index.html">Home</a>
+				</div>	
+					<div id="myNav" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="about.html">About</a></li>
+							<li><a href="assets/Resume_StarrHarrisonMoss.pdf">Resume</a></li>
+						</ul>
+					</div>
+			</div>
+		</nav>
+	
+		<!-- jumbotron start here -->
+<div class="container">
+			<div class="row header">
+				<div class="col-md-10 terrain-heading">
+					<h1 class="page-header">Dying Towns of the Great Plains<br><p id="subheading">Static Map</p>
+					
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 description">
+				<p>I've always had an interest in depopulation, so I thought mapping the lost and dying towns of the Great Plains would be a cool way to explore this topic.  This map shows the extreme depopulation of the Great Plains by weaving together the stories of ten small towns in the region.  Through telling the stories of these towns, I wanted to bring forth different themes of loss that has become endemic to life on the Great Plains.
+				</p>
+				<p>
+				All data was processed in ArcGIS.  Individual DEMs from <a href="http://www.viewfinderpanoramas.org///">viewfinder panoramas</a> were mosaiced to create a hillshade and national land cover data was obtained from the <a href="http://www.mrlc.gov/nlcd11_data.php">National Land Cover Database (NLCD)</a> and then generalized. I used Photoshop to drape landcover over the hillshade layer.  Vector data such as water bodies and administrative boundaries were overlaid and edited in Illustrator.  
+				</p>
+				<p> GIF available <a href="assets/GreatPlainsGIF.gif">here</a>.</p>
+				</div>
+				
+		
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<p></p>
+				</div>
+				<div class="col-md-12">
+					<div class="thumbnail portfolio-thumbnail-terrain">
+						<a href="assets/GreatPlainsGIF.gif"><img src="assets/GreatPlainsGIF.gif" class="portfolio-thumbnail-terrain-img"
+							 alt="yosemite national park sign" />
+						</a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+
+	</body>
+	<footer>
+		<div class="jumbotron-footer">
+			<div class="jumbotron-container">
+				
+				<h4>Footer</a></h4>
+			</div>
+		</div>
+		
+		</footer>
+
+
+</html>
