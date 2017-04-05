@@ -16,6 +16,7 @@
 }
 
 .text-center{
+	background-color:white;
 
 }
 
@@ -43,6 +44,7 @@
 .sub-container{
 	font-family: verdana;
 	background-image: url("img/neighborhood3.gif");
+	background-color:white;
 
 	
 }
@@ -62,14 +64,14 @@
 
 .jumbotron {
 	
-	background-image: url("../assets/cartArt4.png");
+	/*background-image: url("../assets/cartArt4.png");*/
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding-top:10px;
 	padding-bottom:10px;
 	margin-bottom:5px;
-	opacity:.9;
+	opacity:1;
 	text-shadow: 
-	
+	color:white;
 }
 
 
@@ -595,6 +597,7 @@
 
 .jumbotron-container{
 	padding-top:4800px;
+	background-color:white;
 	
 }
 
