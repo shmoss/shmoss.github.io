@@ -19,12 +19,12 @@
 }
 
 .navbar-header{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 
 }
 
 .navbar-nav{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 }
 
 .logo{
@@ -79,25 +79,25 @@
 	position:relative;
 	opacity:.8;
 	max-width:400px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
     font-size: 14px;
     opacity:.9;
 }
 
 .description{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 	opacity:.9;
 
 }
 
 .page-header{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 	opacity:.9;
 
 }
 
 .row-header{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 	opacity:.9;
 
 }
