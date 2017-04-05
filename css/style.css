@@ -339,9 +339,9 @@
 	position:absolute;
 	display:inline-block;
 	text-align:left;
-	text-indent:-95px;
+	text-indent:-80px;
 	vertical-align:center;
-	padding-top:130px;
+	padding-top:140px;
 	background: none;
 	color: #000;
 	font-size:25px;
@@ -367,7 +367,7 @@
 	position:absolute;
 	display:inline-block;
 	text-align:left;
-	text-indent:-125px;
+	text-indent:-110px;
 	vertical-align:center;
 	padding-top:130px;
 	background: none;
@@ -395,7 +395,7 @@
 	position:absolute;
 	display:inline-block;
 	text-align:left;
-	text-indent:-93px;
+	text-indent:-102px;
 	vertical-align:center;
 	padding-top:190px;
 	background: none;
@@ -530,12 +530,12 @@
 
 .text {
 	display:inline-block;
-	font-size:12px;
+	font-size:16px;
 	position:relative;
 	opacity:.8;
 	max-width:400px;
 	font-family: "Optima", "Tw Cen MT", sans-serif;
-    font-size: 12px;
+    
 }
 
 @font-face{
