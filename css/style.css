@@ -17,6 +17,7 @@
 
 .text-center{
 	background-color:white;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 
 }
 
@@ -43,7 +44,7 @@
 }
 
 .sub-container{
-	font-family: verdana;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 	background-image: url("img/neighborhood3.gif");
 	background-color:white;
 

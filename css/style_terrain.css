@@ -24,6 +24,27 @@
 
 }
 
+.portfolio-thumbnail-terrain{
+	border: 0 none;
+    box-shadow: none;
+    margin-top:-12px;
+    margin-bottom:35px;
+    margin-left:-5px;
+   
+
+
+}
+
+.portfolio-thumbnail-terrain-img{
+	border: solid;
+	border-color:black;
+	border-width:1.5px;
+    box-shadow: none;
+
+    
+
+}
+
 .navbar-header{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 
@@ -31,8 +52,7 @@
 
 .navbar-nav{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
-
-
+}
 
 .logo{
 	background-color: white;
@@ -47,12 +67,10 @@
 	border-width: 0px;
 	border-style: solid;
 	border-color: black;
-	font-family: "Optima", "Tw Cen MT", sans-serif;
 }
 .jumbotron{
 	padding-top: 15px;
-	padding-bottom: 20px;
-	font-family: "Optima", "Tw Cen MT", sans-serif;
+	padding-bottom: 10px;
 }
 
 .navbar{
@@ -70,7 +88,13 @@
 }
 .header{
 	padding-top: 10px;
+}
 
+
+.jumbotron-container{
+	opacity:0;
+	padding-top:0px;
+	height:10px;
 
 }
 
@@ -85,14 +109,11 @@
 	font-family: "Optima", "Tw Cen MT", sans-serif;
     font-size: 14px;
     opacity:.9;
-
 }
 
 .description{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 	opacity:.9;
-	
-
 
 }
 
@@ -108,30 +129,8 @@
 
 }
 
-.row{
-	font-family: "Optima", "Tw Cen MT", sans-serif;
-	opacity:.9;
-
-}
-
-.col-md-10-{
-	font-family: "Optima", "Tw Cen MT", sans-serif;
-	opacity:.9;
-}
-
-.container{
-	font-family: "Optima", "Tw Cen MT", sans-serif;
-	opacity:.9;
-
-}
-
-.jumbotron-footer{
-	opacity:0;
-}
-
 #subheading{
 	font-size:20px;
-	margin-top:4px;
+	margin-top:8px;
 	margin-bottom:0px;
 }
-
