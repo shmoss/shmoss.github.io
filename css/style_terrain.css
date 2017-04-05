@@ -4,7 +4,7 @@
     margin-top:-10px;
     margin-bottom:35px;
     margin-left:-5px;
-	
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 
 
 }
@@ -20,6 +20,7 @@
     float:left;
     width:90%;
     height:90%;
+    font-family: "Optima", "Tw Cen MT", sans-serif;
 
 }
 
@@ -46,10 +47,12 @@
 	border-width: 0px;
 	border-style: solid;
 	border-color: black;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 }
 .jumbotron{
 	padding-top: 15px;
 	padding-bottom: 20px;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 }
 
 .navbar{
@@ -100,6 +103,23 @@
 }
 
 .row-header{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	opacity:.9;
+
+}
+
+.row{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	opacity:.9;
+
+}
+
+.col-md-10-{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	opacity:.9;
+}
+
+.container{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 	opacity:.9;
 

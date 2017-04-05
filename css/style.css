@@ -77,6 +77,16 @@
 	color:white;
 }
 
+.jumbotron-footer{
+	bottom-padding:20px;
+	height:400px;
+}
+
+.jumbotron-container{
+	font-color:white;
+	top-padding: 15px;
+	height:400px;
+}
 
 .container {
 	
@@ -598,9 +608,6 @@
 	padding-left:30px;
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 
-.jumbotron-container{
-	padding-top:4800px;
-	background-color:white;
 	
 }
 
