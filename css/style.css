@@ -8,6 +8,7 @@
 	margin-right: 5px;
 	margin-top:5px;
 	margin-left:5px
+
 	/*sdfsdfdsdfsdf*/
 }
 
@@ -25,6 +26,7 @@
 .portfolio-content{
 	border-color:black;
 	border-width:5px;
+	
 }
 
 .portfolio-thumbnail-img{
@@ -62,7 +64,6 @@
 
 .row{
 	position:center;
-
 	
 }
 
@@ -528,10 +529,12 @@
 .row, .portfolio-content{
 	margin-bottom: .1%;
 	text-align: center;
+
 }
 
 .portfolio-content{
 	padding: 10px;
+
 
 }	
 .caption-style-1 .caption{
@@ -544,7 +547,7 @@
 
 .text {
 	display:inline-block;
-	font-size:16px;
+	font-size:14px;
 	position:relative;
 	opacity:.8;
 	max-width:400px;
