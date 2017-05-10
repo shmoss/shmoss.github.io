@@ -1,0 +1,117 @@
+.portfolio-thumbnail-gambia{
+	border: none;
+    box-shadow: none;
+    margin-top:-10px;
+    margin-bottom:35px;
+    margin-left:-20px;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	float:left;
+
+}
+
+
+
+.portfolio-thumbnail-gambia-img{
+
+	border: none;
+	border-color:blue;
+	border-width:2px;
+    box-shadow: none;
+    float:left;
+    width:70%;
+    height:70%;
+    font-family: "Optima", "Tw Cen MT", sans-serif;
+
+}
+
+
+
+.navbar-header{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+
+}
+
+.navbar-nav{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+}
+
+.logo{
+	background-color: white;
+	border-width: 10px;
+	border-style: solid;
+	border-color: white;
+}
+
+
+.main{
+	background-color: white;
+	border-width: 0px;
+	border-style: solid;
+	border-color: black;
+}
+.jumbotron{
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-toggle{
+	background-color: white;
+}
+
+.title{
+	padding-top: 70px;
+}
+.header{
+	padding-top: 10px;
+}
+
+
+.jumbotron-container{
+	opacity:0;
+	padding-top:0px;
+	height:10px;
+
+}
+
+.text {
+	display:inline-block;
+	padding-top:10px;
+	text-align:left
+	font-size:12px;
+	position:relative;
+	opacity:.8;
+	max-width:400px;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+    font-size: 14px;
+    opacity:.9;
+}
+
+.description{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	opacity:.9;
+
+}
+
+.page-header{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	opacity:.9;
+
+}
+
+.row-header{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	opacity:.9;
+
+}
+
+#subheading{
+	font-size:20px;
+	margin-top:8px;
+	margin-bottom:0px;
+}
