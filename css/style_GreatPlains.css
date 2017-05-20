@@ -11,9 +11,12 @@
 }
 
 .portfolio-thumbnail-terrain-img{
+	
 	border: solid;
 	border-color:black;
-	border-width:1.5px;
+	border-width:1px;
+    box-shadow: none;
+	
     box-shadow: none;
 
     
