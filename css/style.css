@@ -351,6 +351,8 @@
 	text-align:center;
 }
 
+
+
 .image-overlay-8 {
 	position:absolute;
 	display:inline-block;
@@ -395,6 +397,34 @@
 
 	visibility: hidden;
 	opacity: 0;
+}
+
+.image-overlay-21 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-80px;
+	vertical-align:center;
+	padding-top:110px;
+	background: none;
+	color: #000;
+	font-size:22px;
+	font-weight: bold;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.portfolio-thumbnail:hover .image-overlay-21 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
 }
 
 .portfolio-thumbnail:hover .image-overlay-9 {
@@ -663,6 +693,17 @@
 
 .portfolio-thumbnail-woodenships-img{
 	box-shadow:none;
+}
+
+.portfolio-thumbnail-tech{
+	border-width:2px;
+    box-shadow: 2px;
+    margin-top:-10px;
+    margin-bottom:35px;
+    margin-left:-20px;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	float:left;
+
 }
 
 @font-face {
