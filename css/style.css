@@ -38,6 +38,12 @@
 
 }
 
+.portfolio-thumbnail-Homicides{
+	border-color:black;
+	border-width:1px;
+
+}
+
 .navbar-header{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 	opacity:.9;
@@ -415,6 +421,34 @@
 
 	visibility: hidden;
 	opacity: 0;
+}
+
+.image-overlay-22 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-90px;
+	vertical-align:center;
+	padding-top:110px;
+	background: none;
+	color: #000;
+	font-size:22px;
+	font-weight: bold;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.portfolio-thumbnail:hover .image-overlay-22 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
 }
 
 .portfolio-thumbnail:hover .image-overlay-21 {

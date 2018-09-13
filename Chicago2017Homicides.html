@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mapping with D3</title>
+	<script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+	<script src="data/Chitown.json"></script>
+	<script src="data/Homicides_2017.json"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<style>
+body {
+    position: absolute;
+    font-family: "Proxima Nova", "Montserrat", sans-serif;
+    padding-left: 20px
+
+}
+h1, h2 {
+    position: absolute;
+    left: 10px;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+h2 {
+    top: 30px;
+    font-size: 1em;
+}
+
+h3 {
+    top: 40px;
+    font-size: 1em;
+}
+
+h5 {
+    position:absolute;
+    top: 40px;
+    left: 200px;
+    font-size: 1em;
+}
+
+.title{
+    padding-top: 20px
+}
+
+.infolabel {
+    font-family: Baskerville; 
+    position: absolute;
+    text-align: center;
+    min-height: 70px;
+    min-width: 100px;
+    color: #fff;
+    background-color: rgba(51,51,51,.85);
+    border: solid thin black;
+    padding: 5px 10px 10px 5px;
+    top: -75px;
+}
+
+.hover {
+    stroke: black;
+    fill: black
+   
+
+}
+
+.commHover {
+    fill: blue;
+    stroke-width: 2px;
+    stroke:black;  
+}
+
+
+#sliderContainer {
+    text-align: center;
+    position: relative;
+    top: 190px;
+    right: 270px
+   
+}
+
+#range{
+    font: optima;
+}
+
+#CounterContainer {
+    text-align: center;
+    position: relative;
+    top: 300px;
+    right: 220px
+   
+}
+
+.waterLabels {
+    opacity: .5
+
+}
+div.tooltip {  
+    word-wrap: normal;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 70px;
+    min-width: 180px;                      
+    padding: 2px;               
+    font: 14px Baskerville;      
+    color: #fff;
+    background-color: rgba(51,51,51,.85);
+    border: solid thin black;
+    padding: 0px 10px 10px 0px;
+    top: -75px;       
+    pointer-events: none;           
+}
+
+div.commTooltip {  
+    word-wrap: normal;
+    position: absolute;
+    text-align: center;
+    min-height: 20px;
+    min-width: 30px;                      
+    padding: 2px;               
+    font: 14px Baskerville;      
+    color: #fff;
+    background-color: rgba(51,51,51,.85);
+    border: solid thin black;
+    padding: 5px 10px 10px 5px;
+    top: -75px;       
+    pointer-events: none;           
+}
+
+#legendContainer { 
+    position: absolute;
+    top: 60px;
+    left: 10px             
+}
+
+.countStyle {
+    font-family: Baskerville; 
+    position: absolute;
+    color: black;
+    top: -75px;
+    right:335px; 
+
+    
+}
+
+.countStyle {
+    font-family: Baskerville; 
+    position: absolute;
+    color: black;
+    top: -95px;
+    right:335px; 
+
+    
+}
+
+.bodyText{
+    width: 260px;
+    padding-top: 20px
+}
+
+/*div.tooltip {
+    position: absolute;
+    text-align: center;
+    min-height: 70px;
+    min-width: 150px;                      
+    padding: 2px;               
+    font: 14px Baskerville;      
+    color: #fff;
+    background-color: rgba(51,51,51,.85);
+    border: solid thin black;
+    padding: 5px 10px 10px 5px;
+    top: -75px;
+}
+*/
+<select id="d3-dropdown">
+  <option value="first">First</option>
+  <option value="second">Second</option>
+  <option value="third">Third</option>
+  <option value="forth">Forth</option>
+</select>
+
+<p id="selected-dropdown"></p>
+	</style>
+    
+</head>
+<body>
+	<h1 class="title" style = "font-family:optima">Total Crime Incidents in Chicago, 2017 </h1>
+	<h2></h2>
+    <h5></h5>
+    <div class="col-xs-6 column map">
+    <div id="legendContainer">
+    <svg width="70" height="80">
+    <circle cx="25" cy="15" r="10" fill="red" opacity= ".6" />
+    <circle cx="25" cy="70" r="6" fill="#ff6f00" opacity= ".6"/>
+    <div class="legendText" style="font-size:14px; color: #003366; font-family:optima; position:absolute; left:50px; top:0px">Homicides, by Month</div>
+    <div class="legendText2" style="font-size:14px; color: #003366; font-family:optima; position:absolute; left:50px; top:55px">All 2017 Homicides</div>
+    <div class="bodyText" style="font-size:14px; color: #003366; font-family:optima; position:absolute; left:25px; top:240px">2017 was an interesting year for Chicago.  2016 had been the deadliest year in two decades, logging 771 murders.  In response, Chicago added police officers to the street and invested in new technology to respond to crime.<br><br> Though Chicago saw a 16% decline in murders compared to the previous year, the city still saw 650 murders in 2017, mostly on the city's south and west sides. Scroll through time to see homicides by month or click on the map to get information about each homicide in 2017.<br><br> Source: Chicago data portal, available <a href="https://data.cityofchicago.org/">here</a>.</div>
+    </svg>
+    </div>
+	<div id="sliderContainer">
+        <input id="timeslide" type="range" min="0" max="11" value="0" step="1" /><br>
+        <span id="range" style="font-family:optima"; >January</span>
+    </div>
+    <div class="waterLabels" style="font-size:14px; color: #003366; font-family:optima; position:absolute; left:640px; top:340px"><i>Lake Michigan<i></div>
+    <div id="CounterContainer">
+        <span id="count">January: 55 homicides <br> YTD: 55 homicides</span> 
+
+    </div>
+
+	<!-- Page elements and content go here. -->
+	<script>
+
+	var width = 700;
+	var height = 880;
+
+	var inputValue = null;
+    var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+	//create SVG
+
+    var mapContainer = d3.select("body")
+        .append("mapContainer")
+        .attr( "width", 900 )
+        .attr ( "height", 900 )
+        
+
+        
+    var Map = mapContainer.append(svg)
+	var svg = d3.select("body")
+		.append("svg")
+		.attr( "width", width )
+		.attr ( "height", height )
+        .attr ("position", 'left')
+        .attr("transform","translate(100,-150)")
+        .attr("class", "map")
+		var g = svg.append ( "g" )
+
+        
+        
+
+        // svg repositioning
+        //$("svg").css({top: 100, left: 100});
+
+	//projection
+	var albersProjection = d3.geoAlbers()
+		.scale( 100000)
+		.rotate ( [87.6298,0] )
+		.center( [0, 41.9781] )
+
+    function zoomed() {
+    g.attr("transform", d3.event.transform);//The zoom and panning is affecting my G element which is a child of SVG
+}
+
+
+    
+    var zoom = d3.zoom()
+        .scaleExtent([1, 21])
+        .on("zoom", zoomed);
+    
+   /*
+   var dragcontainer = d3.drag()
+  .on("drag", function(d, i) {
+    d3.select(this).attr("transform", "translate(" + (d.x = d3.event.x) + "," + (d.y = d3.event.y) + ")");
+  });
+var drag = d3.select("svg").datum({x: 0, y: 0}).call(dragcontainer)
+*/
+	//GeoPath
+	var geoPath = d3.geoPath()
+		.projection( albersProjection );
+
+	g.selectAll( "path" )
+		.data( Chicago.features )
+		.enter()
+		.append( "path" )
+		.attr( "stroke", "white" )
+        .attr( "border-radius", '50%' )
+        .attr( "stroke-width", ".5" )
+		.attr( "fill", "#black" )
+        .attr( "opacity", ".2" )
+		.attr( "d", geoPath )
+        .attr("class","communities")
+        .on("mouseover", function(d) {      
+            commDiv.transition()        
+                .duration(200)      
+                .style("opacity", .9);      
+            commDiv .html(d.properties.community)  
+                .style("left", (d3.event.pageX) + "px")     
+                .style("top", (d3.event.pageY - 28) + "px");  
+            d3.select(this).attr("class","commHover");  
+            })
+            .on("mouseout", function(d) {       
+            commDiv.transition()        
+                .duration(200)      
+                .style("opacity", 0); 
+            d3.select(this).attr("class","communities");  
+            }); 
+        /*.on("mouseover", function(d){
+            d3.select("h5").html(d.properties.community)
+            d3.select(this).attr("class","commHover");
+        })
+        .on("mouseout", function(d){
+            d3.select("h5").text("");
+            d3.select(this).attr("class","communities");
+        });
+        */
+
+
+
+	//lets load rodents
+    // svg repositioning
+   
+	var rodents = svg.append( "g" );
+
+    rodents.selectAll( "path" )
+        .data( homicides.features )
+        .enter()
+        .append( "path" )
+        .attr( "pointRadius", "10px" )
+        .attr( "fill", initialDate)
+        .attr( "stroke", 'white' )
+        .attr("opacity", initialOpacity)
+        .attr( "d", geoPath.pointRadius(initialDateMatchRadius) )
+        .attr("class","incident")
+        .on("mouseover", function(d) {      
+            div.transition()        
+                .duration(200)      
+                .style("opacity", .9);      
+            div .html('<br/>' + d.properties.Date + '<br/>' + d.properties.Block  + '<br/>' + d.properties.LocationDescription)  
+                .style("left", (d3.event.pageX) + "px")     
+                .style("top", (d3.event.pageY - 88) + "px"); 
+                d3.select(this).attr("class","hover");   
+            })
+            .on("mouseout", function(d) {       
+            div.transition()        
+                .duration(200)      
+                .style("opacity", 0);  
+            d3.select(this).attr("class","incident"); 
+            });                  
+        /*.on("mouseover", function(d){
+            d3.select("h2").html('<br/>' + d.properties.Date + '<br/>' + d.properties.Block  + '<br/>' + d.properties.LocationDescription)
+            d3.select(this).attr("class","hover");
+
+        })*/
+        /*.on("mouseout", function(d){
+            d3.select("h2").text("");
+            d3.select(this).attr("class","incident");
+        });*/
+
+
+    
+    // counter function
+    d3.select("#timeslide").on("input", function() {
+        update(+this.value);
+        document.getElementById("count").innerHTML = counter
+
+    });
+
+
+    document.getElementById("count").className = "countStyle"
+   
+
+    function update(value) {
+    if (value == 0) {
+        console.log('true')
+        counter = "<div>January: 55 homicides</div>" +
+                  "<div>YTD: 55 homicides</div>"
+    }
+    if (value == 1) {
+        console.log('true')
+        counter = "<div>February: 50 homicides</div>" +
+                  "<div>YTD: 105 homicides</div>"
+    }
+    if (value == 2) {
+        console.log('true')
+        counter = "<div>March: 42 homicides</div>" +
+                  "<div>YTD: 147 homicides</div>"
+    }
+    if (value == 3) {
+        console.log('true')
+        counter = "<div>April: 48 homicides</div>" +
+                  "<div>YTD: 195 homicides</div>"
+    }
+    if (value == 4) {
+        console.log('true')
+        counter = "<div>May: 59 homicides</div>" +
+                  "<div>YTD: 254 homicides</div>"
+    }
+    if (value == 5) {
+        console.log('true')
+        counter = "<div>June: 86 homicides</div>" +
+                  "<div>YTD: 340 homicides</div>"
+    }
+    if (value == 6) {
+        console.log('true')
+        counter = "<div>July: 76 homicides</div>" +
+                  "<div>YTD: 416 homicides</div>"
+    }
+    if (value == 7) {
+        console.log('true')
+        counter = "<div>August: 58 homicides</div>" +
+                  "<div>YTD: 474 homicides</div>"
+    }
+    if (value == 8) {
+        console.log('true')
+        counter = "<div>September: 61 homicides</div>" +
+                  "<div>YTD: 535 homicides</div>"
+    }
+    if (value == 9) {
+        console.log('true')
+        counter = "<div>October: 59 homicides</div>" +
+                  "<div>YTD: 594 homicides</div>"
+
+    }if (value == 10) {
+        console.log('true')
+        counter = "<div>November: 39 homicides</div>" +
+                  "<div>YTD: 633 homicides</div>"
+
+    }if (value == 11) {
+        console.log('true')
+        counter = "<div>December: 41 homicides</div>" +
+                  "<div>YTD: 674 homicides</div>"
+    }
+     else {
+        console.log('no')
+    };
+    document.getElementById("range").innerHTML=month[value];
+    inputValue = month[value];
+
+    d3.selectAll(".incident")
+        .attr("fill", dateMatch)
+        .attr("opacity", dateMatchOpacity)
+        .attr( "d", geoPath.pointRadius(dateMatchRadius) )
+    
+}
+var counter = '55 homicides'
+function dateMatch(data, value) {
+        var d = new Date(data.properties.Date);
+        var m = month[d.getMonth()];
+        if (inputValue == m) {
+            this.parentElement.appendChild(this);
+            var size = d3.selectAll(this).size()
+            console.log(inputValue)
+            //counter++;
+            return "red";
+
+            if (inputValue == "January") {
+            
+            counter = 8909;
+            console.log(counter)
+            return "red";
+            }
+        } else {
+            return "#ff6f00";
+        };
+
+
+        return counter
+    }
+
+function countMatch(data, value) {
+        var d = new Date(data.properties.Date);
+        var m = month[d.getMonth()];
+        if (inputValue == 2) {
+            
+            counter = 8909;
+            return "red";
+        } else {
+            return "#808080";
+        };
+
+
+        return counter
+    }
+
+function dateMatchRadius(data, value) {
+        var d = new Date(data.properties.Date);
+        var m = month[d.getMonth()];
+        if (inputValue == m) {
+            this.parentElement.appendChild(this);
+            return 7;
+        } else {
+            return 3;
+        };
+    }
+
+    function dateMatchOpacity(data, value) {
+        var d = new Date(data.properties.Date);
+        var m = month[d.getMonth()];
+        if (inputValue == m) {
+            this.parentElement.appendChild(this);
+            return .8;
+        } else {
+            return .5;
+        };
+    }
+
+    function initialOpacity(d,i){
+        var d = new Date(d.properties.Date);
+        var m = month[d.getMonth()];
+        if (m == "January") {
+            this.parentElement.appendChild(this);
+            return .8;
+        } else {
+            return .5;
+        };
+    }
+
+function initialDateMatchRadius(d,i){
+        var d = new Date(d.properties.Date);
+        var m = month[d.getMonth()];
+        if (m == "January") {
+            this.parentElement.appendChild(this);
+            return 7;
+        } else {
+            return 3;
+        };
+    }
+    
+
+    function initialDate(d,i){
+        var d = new Date(d.properties.Date);
+        var m = month[d.getMonth()];
+        if (m == "January") {
+            this.parentElement.appendChild(this);
+            return "red";
+        } else {
+            return "#ff6f00";
+        };
+    }
+
+    //create info label div
+
+    
+    
+    // Define the div for the tooltip
+    var div = d3.select("body").append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0)
+    //.style("left", (d3.event.pageX) + "px")     
+    //.style("top", (d3.event.pageY - 28) + "px");
+ 
+    var commDiv = d3.select("body").append("div")   
+    .attr("class", "commTooltip")               
+    .style("opacity", 0);
+
+
+
+    //Make Legend
+
+
+
+		// Our D3 code will go here.
+	</script>	
+</body>
+</html>

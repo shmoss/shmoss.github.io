@@ -31,6 +31,20 @@
 
 }
 
+.portfolio-thumbnail-2017Homicides{
+	width:55%;
+	height:45%;
+	border:solid;
+	border-color:black;
+	border-width:1px;
+    margin-top:-10px;
+    margin-bottom:35px;
+    margin-left:-20px;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	float:left;
+
+}
+
 .navbar-header{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 

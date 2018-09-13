@@ -1,0 +1,243 @@
+body {
+    background-color: #151515;    
+}
+
+.portfolio-thumbnail-crimeByTime{
+    border: 0 none;
+    box-shadow: none;
+    padding-left:20px;
+    float:left;
+
+    
+
+}
+
+.portfolio-thumbnail-crimeByTime-img{
+    border-style:solid;
+    border-color:black;
+    border-width:1.5px;
+    border-radius:0;
+    
+    
+
+}
+
+.portfolio-thumbnail-crimeByTime-img{
+
+    
+}
+
+.navbar-header{
+    font-family: "Optima", "Tw Cen MT", sans-serif;
+
+}
+
+.navbar-nav{
+    font-family: "Optima", "Tw Cen MT", sans-serif;
+}
+
+.logo{
+    background-color: white;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+}
+
+
+.main{
+    background-color: white;
+    border-width: 0px;
+    border-style: solid;
+    border-color: black;
+}
+.jumbotron{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.navbar{
+    padding-left:0%;
+    padding-top:0px;
+
+}
+
+.navbar-toggle{
+    background-color: white;
+}
+
+.title{
+    padding-top: 70px;
+}
+.header{
+    padding-top: 10px;
+}
+
+
+.jumbotron-container{
+    opacity:0;
+    padding-top:0px;
+    height:10px;
+
+}
+
+.text {
+    display:inline-block;
+    padding-top:10px;
+    text-align:left
+    font-size:12px;
+    position:relative;
+    opacity:.8;
+    max-width:400px;
+    font-family: "Optima", "Tw Cen MT", sans-serif;
+    font-size: 14px;
+    opacity:.9;
+}
+
+.description{
+    font-family: "Optima", "Tw Cen MT", sans-serif;
+    opacity:.9;
+
+}
+
+.page-header{
+    font-family: "Optima", "Tw Cen MT", sans-serif;
+    opacity:.9;
+
+}
+
+.row-header{
+    font-family: "Optima", "Tw Cen MT", sans-serif;
+    opacity:.9;
+
+}
+
+#subheading{
+    font-size:20px;
+    margin-top:8px;
+    margin-bottom:0px;
+}
+
+
+
+#page-header{
+margin-left: 5px;
+color: white;
+width: 600px;
+line-height: 1.25;
+font-family: baskerville;
+}
+
+.map {
+	border: black;
+	margin: 10px 0 0 0px;
+	position: relative;
+    bottom: 50px;
+    left: 0px;
+}
+
+.community {
+	fill: white;
+	stroke: #3f3f3f;
+    stroke-width: 1px;
+    stroke-linecap: round;
+}
+
+
+.numbers {
+    fill: #f1f1f1;
+    font-family: baskerville;
+}
+
+.chart {
+    top: 120px;
+    right: 48px;
+    position: absolute
+}
+
+.chartTitle {
+	font-family: baskerville;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: right;
+	right: 10px;
+	fill: #f1f1f1
+}
+
+.chartBackground {
+	fill: #151515;	
+}
+
+.chartFrame {
+	fill: none;
+	stroke: #151515;
+	stroke-width: 3px;	
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #FFF;
+	stroke-width: 2px;	
+}
+
+.axis text {
+	font-family: baskerville;
+	font-size: 0.8em;
+	fill: #FFF;
+}
+
+.dropdown {
+    position: absolute;
+    top: 240px;
+    left: 425px;
+    z-index: 10;
+    font-family: baskerville;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 4px #999;
+}
+
+option {
+    font-weight: normal;
+}
+
+.infolabel {
+    font-family: Baskerville; 
+    position: absolute;
+    text-align: center;
+    min-height: 70px;
+    min-width: 100px;
+    color: #fff;
+    background-color: rgba(51,51,51,.85);
+    border: solid thin black;
+    padding: 5px 10px 10px 5px;
+    top: -75px;
+}
+
+.info {
+   	width: 500px;
+   	bottom: 30px;
+    font-family: Baskerville;
+    font-size: 20px;
+    font-weight: normal;
+    color: #f1f1f1;
+    margin: 0% 10% 1% 75%
+    margin-left: 5px
+    margin-bottom: 100cm;
+    position: relative;
+    bottom: 50px
+}
+
+.infoText {
+    color: #f1f1f1;
+    font-size: 16px;  
+}
+
+.sources {
+    font-size: 14px;
+    color: #f1f1f1;
+    position: relative;
+    bottom: 30px;
+}
