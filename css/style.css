@@ -97,7 +97,9 @@
 	height:400px;
 }
 
-.container {
+.container.text-center {
+
+	width:45%;
 	
 	
 }
