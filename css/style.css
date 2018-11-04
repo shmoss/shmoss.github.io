@@ -1,5 +1,7 @@
 
-
+.navbar.navbar-header {
+	text-align: right;
+}
 .portfolio-thumbnail{
 	
 	background-color:black;
@@ -8,6 +10,7 @@
 	margin-right: 5px;
 	margin-top:5px;
 	margin-left:5px
+
 
 	/*sdfsdfdsdfsdf*/
 }
@@ -19,6 +22,11 @@
 .text-center{
 	background-color:white;
 	font-family: "Optima", "Tw Cen MT", sans-serif;
+
+}
+
+.container {
+
 
 }
 
@@ -48,6 +56,7 @@
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 	opacity:.9;
 
+
 }
 
 .sub-container{
@@ -61,16 +70,44 @@
 .navbar-inverse{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 	font-size: 24px;
+	background:none;
+	border-style:none;
 	
 
 }
 
+.navbar.navbar-inverse li a {
+    text-shadow:none;
+    color:black;
+}
 
+.navbar-brand {
+	text-shadow:none;
+	color:black;
+    
+}
+
+ul.nav a:hover { color: #FF6A6A!important; }
+
+.nav a:hover { color: #FF6A6A!important; }
+
+
+.navbar-collapse li a{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	color:none;
+	
+
+}
+
+.collapse.navbar-collapse{
+	text-align:right;
+}
 
 .row{
 	position:center;
 	padding-left:100px;
 	padding-right:100px;
+	
 	
 }
 
@@ -147,8 +184,21 @@
 
 }
 
+.img-responsive.portfolio-thumbnail{
+	box-shadow:0 4px 8px 0px;
+	margin-left:7%;
+	margin-right:7%;
 
 
+
+	
+	
+}
+
+
+#content1{
+	
+}
 
 
 .portfolio-full{
@@ -157,6 +207,15 @@
 	right: 200px;
 	
 }
+
+.col-md-4.col-sm-12.portfolio-content {
+
+
+
+
+}
+
+
 
 .thumbnail {
 	max-width: 360px;
@@ -251,7 +310,7 @@
 	position:absolute;
 	display:inline-block;
 	text-align:left;
-	text-indent:-65px;
+	text-indent:-70px;
 	vertical-align:center;
 	padding-top:110px;
 	background: none;
@@ -279,7 +338,7 @@
 	position:absolute;
 	display:inline-block;
 	text-align:left;
-	text-indent:-80px;
+	text-indent:-85px;
 	vertical-align:center;
 	padding-top:137px;
 	background: none;
@@ -405,6 +464,7 @@
 
 	visibility: hidden;
 	opacity: 0;
+
 }
 
 .image-overlay-21 {
@@ -471,6 +531,7 @@
 	opacity: 1;
 	vertical-align:center;
 	text-align:center;
+
 }
 
 .image-overlay-10 {
@@ -561,7 +622,7 @@
 	position:absolute;
 	display:inline-block;
 	text-align:left;
-	text-indent:-100px;
+	text-indent:-97px;
 	vertical-align:center;
 	padding-top:110px;
 	background: none;
@@ -573,9 +634,41 @@
 
 	visibility: hidden;
 	opacity: 0;
+	
+
+
 }
 
 .portfolio-thumbnail:hover .image-overlay-15 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+
+}
+
+.image-overlay-28 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-85px;
+	vertical-align:center;
+	padding-top:137px;
+	background: none;
+	color: #000;
+	font-size:22px;
+	font-weight: bold;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+}
+
+.portfolio-thumbnail:hover .image-overlay-28 {
 	display:inline-block;
 	text-align:center;
 	visibility: visible;
@@ -645,7 +738,19 @@
 	opacity:.8;
 	max-width:400px;
 	font-family: "Optima", "Tw Cen MT", sans-serif;
+	padding-top:6px;
     
+}
+
+.container.text-center {
+
+	font-size:14px;
+	
+	opacity:.8;
+	max-width:400px;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	padding-top:6px;
+
 }
 
 @font-face{

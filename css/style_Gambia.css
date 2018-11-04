@@ -1,3 +1,43 @@
+
+
+
+.header{
+	padding-top: 0px;
+	margin-top:-15px;
+}
+
+.navbar-inverse{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	font-size: 24px;
+	background:none;
+	border-style:none;
+	
+
+}
+
+.navbar.navbar-inverse li a {
+    text-shadow:none;
+    color:black;
+}
+
+.navbar-brand {
+	text-shadow:none;
+	color:black;
+    
+}
+
+ul.nav a:hover { color: #FF6A6A!important; }
+
+.nav a:hover { color: #FF6A6A!important; }
+
+
+.navbar-collapse li a{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	color:none;
+	
+
+}
+
 .portfolio-thumbnail-gambia{
 	border: none;
     box-shadow: none;
@@ -66,9 +106,6 @@
 
 .title{
 	padding-top: 70px;
-}
-.header{
-	padding-top: 10px;
 }
 
 
