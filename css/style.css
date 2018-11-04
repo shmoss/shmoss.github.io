@@ -1,3 +1,180 @@
+.tabs {
+    text-align: center;
+    padding-top: 0px;
+	padding-bottom: 25px;
+}
+
+.Meghan{
+	padding-top: 10px;
+
+}
+
+.projectImage{
+	padding-bottom: 50px;
+}
+
+
+/*.projectPage_gray{
+	text-align: center;
+	color: gray;
+}*/
+.projectPage{
+	text-align: center;
+
+}
+
+.projectText{
+	text-align: justify;
+	padding-bottom: 25px;
+}
+.indexText{
+	text-align: justify;
+}
+
+.img_test{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.1);
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 20px;
+}
+
+.column img {
+  margin-top: 35px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.hamburger{
+	background-color: #292929 !important;
+}
+
+#navText {
+	color: black;
+
+}
+
+
+#icons {
+	width: 150px;
+
+}
+
+.free_write_indent{
+	text-indent: 25px;
+	padding-top: 20px;
+}
+
+.back_top{
+	text-align: right!important;
+}
+
+.teaching_outline{
+	padding-top: 20px;
+}
+
+.portfolio-mapbox{
+	background-color: white;
+	border-width: 0px;
+	border-style: solid;
+	border-color: black;
+	width: 100%;
+	height: 100%;
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
+
+
+}
+
+.logo{
+	background-color: white;
+	border-width: 10px;
+	border-style: solid;
+	border-color: white;
+}
+
+
+.main{
+	background-color: white;
+	border-width: 0px;
+	border-style: solid;
+	border-color: black;
+}
+.jumbotron{
+	padding-top: 15px;
+	padding-bottom: 0px;
+	background-color: white;
+}
+
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-brand{
+	color: #2e2e2e;
+	padding-left: 50px;
+}
+
+.navbar-toggle{
+	background-color: white;
+}
+
+
+.title{
+	padding-top: 70px;
+}
+.header{
+	padding-top: 70px;
+	padding-left: 35%;
+}
+.header2{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 35%;
+}
+
+
+p {
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+   font-weight: 300;
+   font-size: 16px !important;
+   color: #424242;
+}
+
+h1, h2, h3, h4{font-family: Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   color: #292929;
+}
+
+h1{
+	padding-bottom: 15px;
+
+}
 
 .portfolio-thumbnail{
 	
