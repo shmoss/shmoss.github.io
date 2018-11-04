@@ -1,6 +1,11 @@
 
+
+.hamburger{
+	background-color: #292929 !important;
+}
+
 .navbar.navbar-header {
-	text-align: right;
+	
 }
 .portfolio-thumbnail{
 	
@@ -85,7 +90,7 @@
 	text-shadow:none;
 	color:black;
 	
-	text-align:right;
+	
     
 }
 
@@ -102,7 +107,7 @@ ul.nav a:hover { color: #FF6A6A!important; }
 }
 
 .collapse.navbar-collapse{
-	text-align:right;
+	
 }
 
 .row{
