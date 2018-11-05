@@ -1,7 +1,38 @@
+.container{
+	margin-left:17px;
+}
+
+.row.header{
+	margin-left:2px;
+
+}
+
+.hamburger{
+	background-color: #292929 !important;
+}
+
+#navText {
+	color: black;
+
+}
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-brand{
+	color: #2e2e2e;
+	padding-left: 50px;
+}
+
+.navbar-toggle{
+	background-color: white;
+}
 
 .header{
 	padding-top: 0px;
-	margin-top:-15px;
+	margin-top:-25px;
 }
 
 .navbar-inverse{
