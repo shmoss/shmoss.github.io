@@ -1,10 +1,37 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: .1%;
+  text-align: center;
+  padding-left:100px;
+  padding-right:100px;
+}
 
 .hamburger{
 	background-color: #292929 !important;
 }
 
+#navText {
+	color: black;
+
+}
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-brand{
+	color: #2e2e2e;
+	padding-left: 50px;
+}
+
+.navbar-toggle{
+	background-color: white;
+}
+
 .navbar.navbar-header {
-	
+
 }
 .portfolio-thumbnail{
 	
@@ -109,13 +136,7 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	
 }
 
-.row{
-	position:center;
-	padding-left:100px;
-	padding-right:100px;
-	
-	
-}
+
 
 .jumbotron {
 	
@@ -194,6 +215,8 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	box-shadow:0 4px 8px 0px;
 	margin-left:7%;
 	margin-right:7%;
+	padding-left:-10px
+	padding-right:-10px;
 
 
 
