@@ -1,10 +1,38 @@
 
-
-
+.row {
+  
+}
 .header{
 	padding-top: 0px;
-	margin-top:-15px;
+	margin-top:-25px;
 }
+
+
+
+.hamburger{
+	background-color: #292929 !important;
+}
+
+#navText {
+	color: black;
+
+}
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-brand{
+	color: #2e2e2e;
+	display:flex;
+}
+
+.navbar-toggle{
+	background-color: white;
+}
+
+
 
 .navbar-inverse{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
@@ -26,6 +54,10 @@
     
 }
 
+.jumbotron-container{
+	font-size:24px;
+}
+
 ul.nav a:hover { color: #FF6A6A!important; }
 
 .nav a:hover { color: #FF6A6A!important; }
@@ -34,11 +66,36 @@ ul.nav a:hover { color: #FF6A6A!important; }
 .navbar-collapse li a{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 	color:none;
-	
+}
+
+
+.navbar-header{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
 
 }
 
-.portfolio-thumbnail-terrain{
+.navbar-nav{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+}
+
+
+.jumbotron{
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-toggle{
+	background-color: white;
+}
+
+
+.portfolio-thumbnail-woodenships{
 	border: 0 none;
     box-shadow: none;
     margin-top:-12px;
@@ -49,27 +106,43 @@ ul.nav a:hover { color: #FF6A6A!important; }
 
 }
 
-.portfolio-thumbnail-terrain-img{
-	
+.portfolio-thumbnail-woodenships-img{
 	border: solid;
 	border-color:black;
-	border-width:1px;
-    box-shadow: none;
-	
+	border-width:1.5px;
     box-shadow: none;
 
     
 
 }
 
-.navbar-header{
+.portfolio-thumbnail-tech{
+	border:solid;
+	border-color:black;
+	border-width:1px;
+    margin-top:-10px;
+    margin-bottom:35px;
+    margin-left:-20px;
 	font-family: "Optima", "Tw Cen MT", sans-serif;
+	float:left;
 
 }
 
-.navbar-nav{
+.portfolio-thumbnail-2017Homicides{
+	width:55%;
+	height:45%;
+	border:solid;
+	border-color:black;
+	border-width:1px;
+    margin-top:-10px;
+    margin-bottom:35px;
+    margin-left:-20px;
 	font-family: "Optima", "Tw Cen MT", sans-serif;
+	float:left;
+
 }
+
+
 
 .logo{
 	background-color: white;
@@ -90,15 +163,7 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	padding-bottom: 10px;
 }
 
-.navbar{
-	padding-left:0%;
-	padding-top:0px;
 
-}
-
-.navbar-toggle{
-	background-color: white;
-}
 
 .title{
 	padding-top: 70px;
@@ -117,7 +182,18 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	display:inline-block;
 	padding-top:10px;
 	text-align:left
-	font-size:12px;
+	position:relative;
+	opacity:.8;
+	max-width:400px;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+    font-size: 14px;
+    opacity:.9;
+}
+
+.techText {
+	display:inline-block;
+	margin-top:-20px;
+	text-align:left
 	position:relative;
 	opacity:.8;
 	max-width:400px;
@@ -149,3 +225,4 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	margin-top:8px;
 	margin-bottom:0px;
 }
+

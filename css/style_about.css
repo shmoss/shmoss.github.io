@@ -1,11 +1,21 @@
+
+
 .container{
 	margin-left:17px;
 }
 
 .row.header{
 	margin-left:2px;
+	padding-left:0px
+	padding-right:20px;
 
 }
+
+.header{
+	padding-top: 0px;
+	margin-top:-25px;
+}
+
 
 .hamburger{
 	background-color: #292929 !important;
@@ -30,10 +40,7 @@
 	background-color: white;
 }
 
-.header{
-	padding-top: 0px;
-	margin-top:-25px;
-}
+
 
 .navbar-inverse{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
@@ -70,7 +77,8 @@ ul.nav a:hover { color: #FF6A6A!important; }
 .portfolio-thumbnail-crimeByTime{
 	border: 0 none;
     box-shadow: none;
-   	padding-left:20px;
+    padding-top:10px;
+   	margin-left:-15px;
     float:left;
 
     

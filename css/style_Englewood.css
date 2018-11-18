@@ -7,37 +7,9 @@
 	margin-top:-15px;
 }
 
-.navbar-inverse{
-	font-family: "Optima", "Tw Cen MT", sans-serif;
-	font-size: 24px;
-	background:none;
-	border-style:none;
-	
-
-}
-
-.navbar.navbar-inverse li a {
-    text-shadow:none;
-    color:black;
-}
-
-.navbar-brand {
-	text-shadow:none;
-	color:black;
-    
-}
-
-ul.nav a:hover { color: #FF6A6A!important; }
-
-.nav a:hover { color: #FF6A6A!important; }
 
 
-.navbar-collapse li a{
-	font-family: "Optima", "Tw Cen MT", sans-serif;
-	color:none;
-	
 
-}
 .portfolio-thumbnail-crimeByTime{
 	border: 0 none;
     box-shadow: none;
@@ -73,14 +45,7 @@ ul.nav a:hover { color: #FF6A6A!important; }
 
 }
 
-.navbar-header{
-	font-family: "Optima", "Tw Cen MT", sans-serif;
 
-}
-
-.navbar-nav{
-	font-family: "Optima", "Tw Cen MT", sans-serif;
-}
 
 .logo{
 	background-color: white;
@@ -159,4 +124,89 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	font-size:20px;
 	margin-top:8px;
 	margin-bottom:0px;
+}
+
+.hamburger{
+	background-color: #292929 !important;
+}
+
+#navText {
+	color: black;
+
+}
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-brand{
+	color: #2e2e2e;
+	display:flex;
+}
+
+.navbar-toggle{
+	background-color: white;
+}
+
+
+
+.navbar-inverse{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	font-size: 24px;
+	background:none;
+	border-style:none;
+	
+
+}
+
+.navbar.navbar-inverse li a {
+    text-shadow:none;
+    color:black;
+}
+
+.navbar-brand {
+	text-shadow:none;
+	color:black;
+    
+}
+
+.jumbotron-container{
+	font-size:24px;
+}
+
+ul.nav a:hover { color: #FF6A6A!important; }
+
+.nav a:hover { color: #FF6A6A!important; }
+
+
+.navbar-collapse li a{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	color:none;
+}
+
+
+.navbar-header{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+
+}
+
+.navbar-nav{
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+}
+
+
+.jumbotron{
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-toggle{
+	background-color: white;
 }

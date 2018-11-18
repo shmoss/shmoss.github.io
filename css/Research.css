@@ -1,8 +1,59 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: .1%;
+  text-align: left;
+  padding-left:10px;
+  padding-right:100px;
+}
+
+.container{
+	margin-left:7px;
+}
+
+.row.header{
+	margin-left:2px;
+	padding-left:0px
+	padding-right:20px;
+	opacity:.9;
+
+}
 
 .header{
 	padding-top: 0px;
-	margin-top:-15px;
+	margin-top:-25px;
 }
+
+#subheading{
+	font-size:20px;
+	margin-top:8px;
+	margin-bottom:0px;
+}
+
+.hamburger{
+	background-color: #292929 !important;
+}
+
+#navText {
+	color: black;
+
+}
+.navbar{
+	padding-left:0%;
+	padding-top:0px;
+
+}
+
+.navbar-brand{
+	color: #2e2e2e;
+	padding-left: 50px;
+}
+
+.navbar-toggle{
+	background-color: white;
+}
+
+
 
 .navbar-inverse{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
@@ -24,6 +75,10 @@
     
 }
 
+.jumbotron-container{
+	font-size:24px;
+}
+
 ul.nav a:hover { color: #FF6A6A!important; }
 
 .nav a:hover { color: #FF6A6A!important; }
@@ -32,32 +87,8 @@ ul.nav a:hover { color: #FF6A6A!important; }
 .navbar-collapse li a{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 	color:none;
-	
-
-}
-.portfolio-thumbnail-terrain{
-	border: 0 none;
-    box-shadow: none;
-    margin-top:-12px;
-    margin-bottom:35px;
-    margin-left:-5px;
-   
-
-
 }
 
-.portfolio-thumbnail-terrain-img{
-	
-	border: solid;
-	border-color:black;
-	border-width:1px;
-    box-shadow: none;
-	
-    box-shadow: none;
-
-    
-
-}
 
 .navbar-header{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
@@ -68,23 +99,10 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 }
 
-.logo{
-	background-color: white;
-	border-width: 10px;
-	border-style: solid;
-	border-color: white;
-}
 
-
-.main{
-	background-color: white;
-	border-width: 0px;
-	border-style: solid;
-	border-color: black;
-}
 .jumbotron{
-	padding-top: 15px;
-	padding-bottom: 10px;
+	padding-top: 0px;
+	padding-bottom: 5px;
 }
 
 .navbar{
@@ -97,64 +115,22 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	background-color: white;
 }
 
-.title{
-	padding-top: 70px;
-}
-
-
-
 .jumbotron-container{
 	opacity:0;
 	padding-top:0px;
 	height:10px;
 
-}
-
-.text {
-	display:inline-block;
-	padding-top:10px;
-	text-align:left
-	font-size:12px;
-	position:relative;
-	opacity:.8;
-	max-width:400px;
-	font-family: "Optima", "Tw Cen MT", sans-serif;
-    font-size: 14px;
-    opacity:.9;
 }
 
 .description{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 	opacity:.9;
+	left: 17px;
 
 }
 
-.page-header{
-	font-family: "Optima", "Tw Cen MT", sans-serif;
-	opacity:.9;
-
-}
-
-.row-header{
-	font-family: "Optima", "Tw Cen MT", sans-serif;
-	opacity:.9;
-
-}
-
-#subheading{
-	font-size:20px;
-	margin-top:8px;
-	margin-bottom:0px;
-}
-
-.jumbotron-container{
-	opacity:0;
-	padding-top:0px;
-	height:10px;
 
 
-}
 
-.ending{
-	padding-bottom:65px;
-}
+
+
