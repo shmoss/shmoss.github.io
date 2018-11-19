@@ -6,6 +6,15 @@
 	margin-top:-15px;
 }
 
+.hamburger{
+	background-color: #292929 !important;
+}
+
+#navText {
+	color: black;
+
+}
+
 .navbar-inverse{
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 	font-size: 24px;
