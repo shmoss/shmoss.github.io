@@ -36,6 +36,8 @@
 	padding-left: 50px;
 }
 
+
+
 .navbar-toggle{
 	background-color: white;
 }
@@ -62,9 +64,13 @@
     
 }
 
-ul.nav a:hover { color: #FF6A6A!important; }
+.navbar-brand:hover{
+    color: #00264d;
+}
 
-.nav a:hover { color: #FF6A6A!important; }
+ul.nav a:hover { color: #9f0000!important; }
+
+.nav a:hover { color: #9f0000!important; }
 
 
 .navbar-collapse li a{

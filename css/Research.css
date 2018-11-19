@@ -79,6 +79,10 @@
 	font-size:24px;
 }
 
+.navbar-brand:hover{
+    color: #00264d;
+}
+
 ul.nav a:hover { color: #FF6A6A!important; }
 
 .nav a:hover { color: #FF6A6A!important; }

@@ -1,10 +1,19 @@
+.img-responsive.portfolio-thumbnail .hoverText {
+
+visibility:hidden;
+}
+
+.img-responsive.portfolio-thumbnail :hover .hoverText {
+visibility:visible;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: .1%;
   text-align: center;
-  padding-left:100px;
-  padding-right:100px;
+  padding-left:85px;
+  padding-right:85px;
 }
 
 .hamburger{
@@ -57,6 +66,7 @@
 }
 
 .container {
+
 
 
 }
@@ -115,9 +125,11 @@
 .navbar-brand {
 	text-shadow:none;
 	color:black;
-	
-	
-    
+		    
+}
+
+.navbar-brand:hover{
+    color: #00264d;
 }
 
 ul.nav a:hover { color: #FF6A6A!important; }
@@ -218,6 +230,7 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	margin-right:7%;
 	padding-left:-10px
 	padding-right:-10px;
+
 		
 }
 
@@ -243,7 +256,7 @@ ul.nav a:hover { color: #FF6A6A!important; }
 
 .image-overlay {
 	position:absolute;
-	display:inline-block;
+	display:flex
 	text-align:left;
 	text-indent:-75px;
 	vertical-align:center;
@@ -357,7 +370,7 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	position:absolute;
 	display:inline-block;
 	text-align:left;
-	text-indent:-85px;
+	text-indent:-80px;
 	vertical-align:center;
 	padding-top:87px;
 	background: none;
@@ -443,7 +456,7 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	position:absolute;
 	display:inline-block;
 	text-align:left;
-	text-indent:-70px;
+	text-indent:-74px;
 	vertical-align:center;
 	padding-top:60px;
 	background: none;
@@ -508,7 +521,7 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	position:absolute;
 	display:inline-block;
 	text-align:left;
-	text-indent:-90px;
+	text-indent:-45px;
 	vertical-align:center;
 	padding-top:60px;
 	background: none;
@@ -523,6 +536,34 @@ ul.nav a:hover { color: #FF6A6A!important; }
 }
 
 .portfolio-thumbnail:hover .image-overlay-22 {
+	display:inline-block;
+	text-align:center;
+	visibility: visible;
+	color:white;
+	opacity: 1;
+	vertical-align:center;
+	text-align:center;
+}
+
+.image-overlay-23 {
+	position:absolute;
+	display:inline-block;
+	text-align:left;
+	text-indent:-35px;
+	vertical-align:center;
+	padding-top:83px;
+	background: none;
+	color: #000;
+	font-size:22px;
+	font-weight: bold;
+	font-family: "Optima", "Tw Cen MT", sans-serif;
+	/*text-shadow:0px 0px 20px #fff;*/
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.portfolio-thumbnail:hover .image-overlay-23 {
 	display:inline-block;
 	text-align:center;
 	visibility: visible;
@@ -731,6 +772,8 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	
 }
 
+
+
 .row, .portfolio-content{
 	margin-bottom: .1%;
 	text-align: center;
@@ -755,9 +798,11 @@ ul.nav a:hover { color: #FF6A6A!important; }
 	font-size:14px;
 	position:relative;
 	opacity:.8;
-	max-width:400px;
+	max-width:350px;
 	font-family: "Optima", "Tw Cen MT", sans-serif;
 	padding-top:6px;
+	margin-left:2%;
+	margin-right:2%;
     
 }
 
